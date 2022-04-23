@@ -24,7 +24,7 @@ def get_virtual_memory_percent():
     return psutil.virtual_memory()[2]
 
 
-def notify_about_new_log_in():
+def notify_about_new_ssh_connection():
     p = Penger(settings.token)
     user = argv[2]
     ip = argv[3]
